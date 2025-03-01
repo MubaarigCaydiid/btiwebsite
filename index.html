@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="registration-form">
+        <h2>User Registration</h2>
+        <form action="register.php" method="post" onsubmit="return validateForm()">
+            <label for="Name">Name</label>
+            <input type="text" id="Name" name="Name" required>
+
+            <label for="Email">Email</label>
+            <input type="Email" id="Email" name="Email">
+
+            <label for="Password">Password</label>
+            <input type="password" id="password" name="Password">
+            <div class="strength"></div>
+
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" required>
+
+            <button type="submit">Register</button>
+
+
+        </form>
+        <p id="error-message"></p>
+
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
