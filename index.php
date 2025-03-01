@@ -11,7 +11,7 @@
 <body>
     <div class="registration-form">
         <h2>User Registration</h2>
-        <form action="web.php" method="post" onsubmit="return validateForm()">
+        <form action="register.php" method="post" onsubmit="return validateForm()">
             <label for="Name">Name</label>
             <input type="text" id="Name" name="Name" required>
 
